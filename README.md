@@ -24,23 +24,25 @@ mesma um atributo que define a lista de empregados que o departamento possui. De
 atributo uma lista do tipo ArrayList. A definição deve ser feita por meio de :
 private ArrayList<Empregado> lista_de_empregados;
 
-Inserir na classe a declaração: import java.util.ArrayList; Ao se criar um departamento, deve-se
+   Inserir na classe a declaração: import java.util.ArrayList; Ao se criar um departamento, deve-se
 instanciar o correspondente ArrayList, por meio da declaração:
 
-this.lista_de_empregados = new ArrayList<Empregado>();
+                       this.lista_de_empregados = new ArrayList<Empregado>();
 
-Criar na classe “Departamento” uma função chamada “AdicionaEmpregado (Empregado e)” que
+   Criar na classe “Departamento” uma função chamada “AdicionaEmpregado (Empregado e)” que
 adiciona um empregado na lista de empregados do departamento.
-public void AdicionaEmpregado(Empregado e) {
-this.lista_de_empregados.add(e) }
 
-Criar na classe “Departamento” uma função chamada “RetornaEmpregados()” que retorna a lista de
+                         public void AdicionaEmpregado(Empregado e) {
+                                this.lista_de_empregados.add(e) }
+
+   Criar na classe “Departamento” uma função chamada “RetornaEmpregados()” que retorna a lista de
 empregados alocados no departamento.
-public String RetornaEmpregados() {
-String lista = null;
-for (int i=0; i<this.lista_de_empregados.size(); i++)
-lista += this.lista_de_empregados.get(i).getNomeEmpregado()+”\n”;
-return lista; }
+
+                             public String RetornaEmpregados() {
+                                    String lista = null;
+                      for (int i=0; i<this.lista_de_empregados.size(); i++)
+                  lista += this.lista_de_empregados.get(i).getNomeEmpregado()+”\n”;
+                                         return lista; }
 
 5. Defina um package chamado uscs2. Nesse package defina uma classe chamada “TesteRH” que possui
 um método main() para instanciar departamentos e empregados. Criar um departamento chamado
